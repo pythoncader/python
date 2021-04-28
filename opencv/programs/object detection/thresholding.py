@@ -1,6 +1,6 @@
 import cv2
 from matplotlib import pyplot as plt
-path = "c:/users/mike/desktop/creative cloud files/coding/python/opencv/files/"
+path = "c:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/"
 img = cv2.imread(path+"gradient.png", -1)
 
 threshold = 127

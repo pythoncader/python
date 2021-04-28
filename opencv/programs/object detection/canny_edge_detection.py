@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-path = 'C:/users/mike/desktop/creative cloud files/coding/python/opencv/files/'
+path = 'C:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/'
 img = cv2.imread(path+"messi5.jpg", cv2.IMREAD_GRAYSCALE)
 imgblurred = cv2.GaussianBlur(img, (5, 5), 1)
 cannyafterblur = cv2.Canny(imgblurred, threshold1=100, threshold2=200)

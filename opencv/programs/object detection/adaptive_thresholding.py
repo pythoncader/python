@@ -1,5 +1,5 @@
 import cv2
-path = "c:/users/mike/desktop/creative cloud files/coding/python/opencv/files/"
+path = "c:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/"
 img = cv2.imread(path+'sudoku.png', 0)
 _, th1 = cv2.threshold(img, 50, 255, cv2.THRESH_BINARY)
 th2 = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 2)

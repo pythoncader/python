@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-path = "C:/users/mike/desktop/creative cloud files/coding/python/opencv/files/"
+path = "C:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/"
 img1 = np.zeros((250, 500, 3), np.uint8)
 img1 = cv2.rectangle(img1, (200, 0), (300, 100), (255, 255, 255), -1)
 img2 = cv2.imread(path+"image_1.png")
