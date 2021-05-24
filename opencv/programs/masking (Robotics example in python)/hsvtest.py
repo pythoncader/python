@@ -1,3 +1,4 @@
+#See this example: https://stackoverflow.com/questions/57198052/why-does-the-color-conversion-from-rgb-to-hsv-produce-corrupt-images
 import cv2
 import numpy as np
 path = "C:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/"
