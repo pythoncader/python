@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-path = "C:/users/mike/desktop/creative cloud files/coding/python/opencv/files/"
+path = "C:/users/mike/desktop/creative cloud files/coding/programming/python/opencv/files/"
 def nothing(x):
     pass
 """
@@ -38,6 +38,8 @@ for i in range(0, len(myfiles)):
 
     blur = cv2.blur(frame, (8, 8)) #blur the image to refine the selection process
     hsv = cv2.cvtColor(blur, cv2.COLOR_BGR2HSV) #convert the image to hsv for easy thresholding.
+    cv2.imshow("HSV in BGR color space", hsv)
+    cv2.imshow("HSV converted to BGR color space", cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR))
 
     """
     l_h = cv2.getTrackbarPos("LH", "Tracking")
