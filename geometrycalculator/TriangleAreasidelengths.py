@@ -1,33 +1,28 @@
-import time
-import subprocess
-from myfunctions import clear
-print("Find The Area Of A Triangle! (with side lengths)")
-print("type the first side length here")
-a = float(input())
-print("type the second side length here")
-b = float(input())
-print("type the third side length here")
-c = float(input())
-sa = 0.5 * a
-sb = 0.5 * b
-sc = 0.5 * c
-s = sa + sb + sc
-xroot = s * (s-a)*(s-b)*(s-c)
-import math
-Area = math.sqrt(xroot)
-print("And there is your answer!")
-print(Area)
-#start calculator again on keypress Enter	
-print("\n \nPress Enter to Clear and Calculate Again")
-input("")
+try:
+  import time
+  import subprocess
+  import myfunctions
 
-clear()
-
-a = 1
-
-while a < 1:
-    a += 1
-    time.sleep(1)
-    clear()
-
-subprocess.call(['python', 'main.py'])
+  myfunctions.clear()
+  print("Find The Area Of A Triangle! (with side lengths)")
+  print("\nType the first side length here:")
+  a = float(input())
+  print("\nType the second side length here:")
+  b = float(input())
+  print("\nType the third side length here:")
+  c = float(input())
+  sa = 0.5 * a
+  sb = 0.5 * b
+  sc = 0.5 * c
+  s = sa + sb + sc
+  xroot = s * (s-a)*(s-b)*(s-c)
+  import math
+  Area = math.sqrt(xroot)
+  print("\nAnd there is your answer!")
+  print(Area)
+  #start calculator again on keypress Enter	
+  myfunctions.runmainagain()
+except:
+  print("Something went wrong!")
+#start calculator again on keypress Enter
+myfunctions.runmainagain()

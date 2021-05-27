@@ -1,16 +1,19 @@
 import math
 import subprocess
-from myfunctions import clear
+import myfunctions
 
-clear()
-print('Find missing side lengths of triangles using the Pythagorean Theorem')
-print("What would you like to calculate? \n '1' = missing side length\n '2' = verification of whether a triangle is a right triangle or not\n ...")
-calculate = input()
-if calculate == "1":
-	clear()
+myfunctions.clear()
+print("What would you like to calculate? \n '1' = missing side length\n '2' = right triangle verification\n ...")
+try:
+	calculate = int(input())
+except:
+  myfunctions.invalidinput()
+  
+if calculate == 1:
+	myfunctions.clear()
 	print('Find the missing side length of a triangle: c = hypotenuse, b = leg, a = other leg. \nSimply put the missing side length in as 0 (zero)')
-elif calculate == "2":
-	clear()
+elif calculate == 2:
+	myfunctions.clear()
 	print('Find out if a triangle is a right triangle or not based on the side lengths:\nc = hypotenuse or longest side, b = leg or any other side, a = other leg\n\nPlease type the length of side c below: (as an integer or decimal)')
 	sidec = float(input())
 	print('\nPlease type the length of side b below:')
@@ -27,20 +30,8 @@ elif calculate == "2":
 	elif roundedaplsbsqrd == csqrd:
 		print('\nIt is a right triangle, but it is close:\n\nc squared is equal to: '+str(csqrd)+ ", and b squared plus a squared is equal to: "+str(aplsbsqrd))
 	else:
-		print('\nNope, this triangle is not a right triangle: \n\n c squared is equal to: '+str(csqrd)+ ', and b squared plus a squared is equal to: '+str(aplsbsqrd))
+		print('\nNope, this triangle is not a right triangle: \n\nc squared is equal to: '+str(csqrd)+ ', and b squared plus a squared is equal to: '+str(aplsbsqrd))
 else:
 		print('Input not valid')
 #start calculator again on keypress Enter
-print("\n \nPress Enter to Clear and Calculate Again")
-input("")
-
-clear()
-
-a = 1
-
-while a < 1:
-    a += 1
-    time.sleep(1)
-    clear()
-
-subprocess.call(['python', 'main.py'])
+myfunctions.runmainagain()
