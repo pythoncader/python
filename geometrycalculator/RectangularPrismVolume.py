@@ -5,20 +5,20 @@ try:
   import myfunctions
 
   myfunctions.clear()
-  print('Find the area of a rectangular prism!')
-  print('Write the length here (in feet, decimals if not integer):')
+  print('Find the volume of a rectangular prism:')
+  print('\nWrite the length here (in feet, decimals if not integer):')
   lfeet = float(input())
   lyards = lfeet/3
-  print('Write the width here (in feet, decimals if not integer):')
+  print('\nWrite the width here (in feet, decimals if not integer):')
   wfeet = float(input())
   wyards = wfeet/3
-  print('Write the height here (in feet, decimals if not integer):')
+  print('\nWrite the height here (in feet, decimals if not integer):')
   hfeet = float(input()) 
   hyards = hfeet/3
-  print('Here is the volume of your rectangular prism!')
+  print('\nHere is the volume of your rectangular prism:')
   volume=lyards*wyards*hyards
-  print(str(volume)+' cubic yard(s)')
-  print(str(lfeet*wfeet*hfeet)+' cubic feet')
+  print(" "+str(volume)+' cubic yard(s)')
+  print(" "+str(lfeet*wfeet*hfeet)+' cubic feet')
   #start calculator again on keypress Enter	
   myfunctions.runmainagain()
 except:

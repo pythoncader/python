@@ -2,14 +2,14 @@ def clear():
     try:
         import replit
         replit.clear()
-        print("You are using replit")
+        print("You are using replit\n")
     except:
         import os
         returnvalue = os.system("cls")
-        print("You are using a Windows PC")
+        print("You are using a Windows PC\n")
         if returnvalue != 0:
             os.system("clear")
-            print("You are using OSX or Linux")
+            print("You are using OSX or Linux\n")
 
 def runmainagain():
   import subprocess

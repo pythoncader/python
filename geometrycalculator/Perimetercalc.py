@@ -6,7 +6,7 @@ try:
 
   myfunctions.clear()
   print('Find the perimeter of a polygon with 3 to 15 sides!')
-  print('\nWrite the number of sides here: (up to 15)')
+  print('\nWrite the number of sides here: (3 - 15 sides)')
   try:
     ns = int(input())
   except:
