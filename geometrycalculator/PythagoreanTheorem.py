@@ -24,13 +24,10 @@ elif calculate == "2":
 	roundedaplsbsqrd = math.ceil(aplsbsqrd)
 	if aplsbsqrd == csqrd:
 		print('\nYour triangle, with side lengths a = '+str(sidea)+" b = "+str(sideb)+" and c = "+str(sidec)+" is a right triangle")
-		input("")
 	elif roundedaplsbsqrd == csqrd:
 		print('\nIt is a right triangle, but it is close:\n\nc squared is equal to: '+str(csqrd)+ ", and b squared plus a squared is equal to: "+str(aplsbsqrd))
-		input("")
 	else:
 		print('\nNope, this triangle is not a right triangle: \n\n c squared is equal to: '+str(csqrd)+ ', and b squared plus a squared is equal to: '+str(aplsbsqrd))
-		input("")
 else:
 		print('Input not valid')
 #start calculator again on keypress Enter
