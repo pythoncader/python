@@ -11,7 +11,7 @@ try:
     myfunctions.invalidinput()
 
   if calculate == 1:
-      subprocess.call(['python', 'RectangularPrismVolume.py'])
+      subprocess.call(['python3', 'RectangularPrismVolume.py'])
 except:
   print("Something went wrong!")
 #start calculator again on keypress Enter

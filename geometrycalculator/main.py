@@ -10,13 +10,13 @@ try:
     myfunctions.invalidinput()
 
   if calculate == 1:
-      subprocess.call(['python', 'menuvolume.py'])
+      subprocess.call(['python3', 'menuvolume.py'])
   elif calculate == 2:
-      subprocess.call(['python', 'menuarea.py'])
+      subprocess.call(['python3', 'menuarea.py'])
   elif calculate == 3:
-      subprocess.call(['python', 'menuperimeter.py'])
+      subprocess.call(['python3', 'menuperimeter.py'])
   elif calculate == 4:
-      subprocess.call(['python', 'menufindingvalues.py'])
+      subprocess.call(['python3', 'menufindingvalues.py'])
   else:
       myfunctions.invalidinput()
 except:

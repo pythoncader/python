@@ -11,13 +11,13 @@ try:
     myfunctions.invalidinput()
 
   if calculate == 1:
-      subprocess.call(['python', 'TriangleAreabaseheight.py'])
+      subprocess.call(['python3', 'TriangleAreabaseheight.py'])
   elif calculate == 2:
-      subprocess.call(['python', 'TriangleAreasidelengths.py'])
+      subprocess.call(['python3', 'TriangleAreasidelengths.py'])
   elif calculate == 3:
-      subprocess.call(['python', 'CircumferenceAreaCirclecalc.py'])
+      subprocess.call(['python3', 'CircumferenceAreaCirclecalc.py'])
   elif calculate == 4:
-      subprocess.call(['python', 'TrapezoidAreacalc.py'])
+      subprocess.call(['python3', 'TrapezoidAreacalc.py'])
 except:
   print("Something went wrong!")
 #start calculator again on keypress Enter

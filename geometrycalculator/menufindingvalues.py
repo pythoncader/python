@@ -11,9 +11,9 @@ try:
     myfunctions.invalidinput()
 
   if calculate == 1:
-      subprocess.call(['python', 'distancebetweenpointsformula.py'])
+      subprocess.call(['python3', 'distancebetweenpointsformula.py'])
   elif calculate == 2:
-      subprocess.call(['python', 'PythagoreanTheorem.py'])
+      subprocess.call(['python3', 'PythagoreanTheorem.py'])
 except:
   print("Something went wrong!")
 #start calculator again on keypress Enter
