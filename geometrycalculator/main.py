@@ -2,6 +2,7 @@ import os
 returnvalue = os.system("cls")
 if returnvalue != "":
 	os.system("clear")
+	
 print("What would you like to calculate? \nType your choice in the box below: \n\nvolume \n\narea \n\nperimeter \n\nfinding values \n\nother\n")
 calculate = str(input(""))
 import subprocess
