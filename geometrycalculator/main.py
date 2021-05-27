@@ -1,21 +1,23 @@
-import os
-returnvalue = os.system("cls")
-if returnvalue != "":
-	os.system("clear")
-	
-print("What would you like to calculate? \nType your choice in the box below: \n\nvolume \n\narea \n\nperimeter \n\nfinding values \n\nother\n")
-calculate = str(input(""))
+from myfunctions import clear
 import subprocess
-if calculate == "volume":
+clear()
+	
+print("What would you like to calculate? \nType your choice in the box below: \n\n'1' = volume \n\n'2' = area \n\n'3' = perimeter \n\n'4' = finding values \n")
+try:
+	calculate = int(input())
+except:
+	print('Input not valid\nPress enter to calculate again')
+	input("")
+	subprocess.call(['python', 'main.py'])
+
+if calculate == 1:
     subprocess.call(['python', 'menuvolume.py'])
-elif calculate == "area":
+elif calculate == 2:
     subprocess.call(['python', 'menuarea.py'])
-elif calculate == "perimeter":
+elif calculate == 3:
 		subprocess.call(['python', 'menuperimeter.py'])
-elif calculate == "finding values":
+elif calculate == 4:
 		subprocess.call(['python', 'menufindingvalues.py'])
-elif calculate == "other":
-		subprocess.call(['python', 'menuother.py'])
 else:
 	print('Input not valid\nPress enter to calculate again')
 	input("")

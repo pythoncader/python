@@ -1,6 +1,6 @@
+from myfunctions import clear
 print('running finding values...')
-import replit
-replit.clear()
+clear()
 print("What would you like to calculate? \n '1' = distance formula \n '2' = pythagorean theorem...")
 calculate = int(input())
 

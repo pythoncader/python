@@ -1,3 +1,7 @@
+import time
+from myfunctions import clear
+import subprocess
+
 print('Find the area of a rectangular prism!')
 print('Write the length here (in feet, decimals if not integer):')
 lfeet = float(input())
@@ -15,15 +19,14 @@ print(str(lfeet*wfeet*hfeet)+' cubic feet')
 #start calculator again on keypress Enter	
 print("\n \nPress Enter to Clear and Calculate Again")
 input("")
-import replit
-import time
-replit.clear()
+
+clear()
 
 a = 1
 
 while a < 1:
     a += 1
     time.sleep(1)
-    replit.clear()
-import subprocess
+    clear()
+
 subprocess.call(['python', 'main.py'])

@@ -1,3 +1,7 @@
+import time
+from myfunctions import clear
+import subprocess
+
 print('Find the perimeter of a polygon with 3 to 15 sides!')
 print('Write the number of sides here: (up to 15)')
 ns = input()
@@ -278,15 +282,13 @@ else:
 #start calculator again on keypress Enter	
 print("\n \nPress Enter to Clear and Calculate Again")
 input("")
-import replit
-import time
-replit.clear()
+clear()
 
 a = 1
 
 while a < 1:
-    a += 1
-    time.sleep(1)
-    replit.clear()
-import subprocess
+	a+=1
+	time.sleep(1)
+	clear()
+
 subprocess.call(['python', 'main.py'])

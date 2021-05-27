@@ -1,4 +1,9 @@
 import math
+from myfunctions import clear
+import time
+import subprocess
+
+clear()
 print('Find the distance between two points on the coordinate plane\n')
 print("Please write your first point's x-value here: (as an integer or decimal)")
 x1 = float(input())
@@ -18,15 +23,14 @@ print('\nHere is the distance between the points:\n'+str(distance))
 #start calculator again on keypress Enter	
 print("\n \nPress Enter to Clear and Calculate Again")
 input("")
-import replit
-import time
-replit.clear()
+
+clear()
 
 a = 1
 
 while a < 1:
     a += 1
     time.sleep(1)
-    replit.clear()
-import subprocess
+    clear()
+
 subprocess.call(['python', 'main.py'])

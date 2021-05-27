@@ -1,3 +1,7 @@
+from myfunctions import clear
+import subprocess
+import time
+
 print('Find the Area of a Trapezoid \nPlease Type the First Base Length Below:')
 base1 = float(input())
 print('Please Type the Second Base Length Below:')
@@ -10,15 +14,14 @@ print(Area)
 #start calculator again on keypress Enter	
 print("\n \nPress Enter to Clear and Calculate Again")
 input("")
-import replit
-import time
-replit.clear()
+
+clear()
 
 a = 1
 
 while a < 1:
     a += 1
     time.sleep(1)
-    replit.clear()
-import subprocess
+    clear()
+
 subprocess.call(['python', 'main.py'])

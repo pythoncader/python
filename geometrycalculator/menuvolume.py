@@ -1,6 +1,6 @@
+from myfunctions import clear
 print('running volume...')
-import replit
-replit.clear()
+clear()
 print("What would you like to calculate? \n '1' = rectangular prism volume\n '2' = triangle area (with base and height)\n '3' = triangle area (with side lengths)\n '4' = polygon perimeter (up to 15 sides)\n '5' = circle circumference or area\n ...")
 calculate = int(input())
 

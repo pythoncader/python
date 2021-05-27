@@ -1,6 +1,6 @@
+from myfunctions import clear
 print('running perimeter...')
-import replit
-replit.clear()
+clear()
 print("What would you like to calculate? \n '1' = polygon perimeter (3 to 15 sides)\n '2' = circle circumference or area\n ...")
 calculate = int(input())
 

@@ -1,3 +1,6 @@
+import time
+import subprocess
+from myfunctions import clear
 print("Find The Area Of A Triangle! (with side lengths)")
 print("type the first side length here")
 a = float(input())
@@ -17,15 +20,14 @@ print(Area)
 #start calculator again on keypress Enter	
 print("\n \nPress Enter to Clear and Calculate Again")
 input("")
-import replit
-import time
-replit.clear()
+
+clear()
 
 a = 1
 
 while a < 1:
     a += 1
     time.sleep(1)
-    replit.clear()
-import subprocess
+    clear()
+
 subprocess.call(['python', 'main.py'])
