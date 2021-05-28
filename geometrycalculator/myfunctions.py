@@ -15,11 +15,11 @@ def runmainagain():
   import subprocess
   print('\n\nPress enter to calculate again')
   input("")
-  subprocess.call(['python33', 'main.py'])
+  subprocess.call(['python3', 'main.py'])
   
 def invalidinput():
   import subprocess
   clear()
   print('Input not valid.\n\nPress enter to calculate again')
   input("")
-  subprocess.call(['python33', 'main.py'])
+  subprocess.call(['python3', 'main.py'])
