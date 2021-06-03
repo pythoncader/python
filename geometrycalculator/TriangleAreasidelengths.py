@@ -22,7 +22,7 @@ try:
   print(Area)
   #start calculator again on keypress Enter	
   myfunctions.runmainagain()
-except:
+except Exception:
   print("Something went wrong!")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

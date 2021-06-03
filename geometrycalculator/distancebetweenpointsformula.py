@@ -21,7 +21,7 @@ try:
   inside = x2minusx1squared + y2minusy1squared
   distance = math.sqrt(inside)
   print('\nHere is the distance between the points:\n'+str(distance))
-except:
+except Exception:
   print("Something went wrong!")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

@@ -8,7 +8,7 @@ try:
   print(" '1' = circumference \n '2' = area\n ...")
   try:
     CircorArea = int(input())
-  except:
+  except Exception:
     myfunctions.invalidinput()
     
   if CircorArea == 1:
@@ -28,7 +28,7 @@ try:
     print(radiusarea * radiusarea * pi)
   else:
     print("Entry is not valid")
-except:
+except Exception:
   print("Something went wrong!")
 #start calculator again on keypress Enter	
 myfunctions.runmainagain()

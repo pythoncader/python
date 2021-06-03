@@ -7,7 +7,7 @@ try:
 	print("What would you like to calculate? \n '1' = missing side length\n '2' = right triangle verification\n ...")
 	try:
 		calculate = int(input())
-	except:
+	except Exception:
 		myfunctions.invalidinput()
 	
 	if calculate == 1:
@@ -34,7 +34,7 @@ try:
 			print('\nNope, this triangle is not a right triangle: \n\nc squared is equal to: '+str(csqrd)+ ', and b squared plus a squared is equal to: '+str(aplsbsqrd))
 	else:
 			print('Input not valid')
-except:
+except Exception:
 	print("Something went wrong:")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

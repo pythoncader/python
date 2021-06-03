@@ -6,7 +6,7 @@ try:
   print("What would you like to calculate? \n '1' = volume \n '2' = area \n '3' = perimeter \n '4' = finding values \n ...")
   try:
     calculate = int(input())
-  except:
+  except Exception:
     myfunctions.invalidinput()
 
   if calculate == 1:
@@ -19,7 +19,7 @@ try:
       subprocess.call(['python3', 'menufindingvalues.py'])
   else:
       myfunctions.invalidinput()
-except:
+except Exception:
   print("Something went wrong!")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

@@ -7,7 +7,7 @@ try:
   print("What would you like to calculate? \n '1' = triangle area (with base and height)\n '2' = triangle area (with side lengths)\n '3' = circle circumference or area\n '4' = trapezoid area\n ...")
   try:
     calculate = int(input())
-  except:
+  except Exception:
     myfunctions.invalidinput()
 
   if calculate == 1:
@@ -18,7 +18,7 @@ try:
       subprocess.call(['python3', 'CircumferenceAreaCirclecalc.py'])
   elif calculate == 4:
       subprocess.call(['python3', 'TrapezoidAreacalc.py'])
-except:
+except Exception:
   print("Something went wrong!")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

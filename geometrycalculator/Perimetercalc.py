@@ -9,7 +9,7 @@ try:
   print('\nWrite the number of sides here: (3 - 15 sides)')
   try:
     ns = int(input())
-  except:
+  except Exception:
     myfunctions.invalidinput()
     
   if ns == 3:
@@ -286,7 +286,7 @@ try:
     print(s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9 + s10 + s11 + s12 + s13 + s14 + s15)
   else:
     print('\nEntry is not valid')
-except:
+except Exception:
   print('Something went wrong!')
 #start calculator again on keypress Enter
 myfunctions.runmainagain()
