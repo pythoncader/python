@@ -20,6 +20,7 @@ try:
 except Exception:
   print("Something went wrong!")
 except KeyboardInterrupt:
+  myfunctions.clear()
   sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()
