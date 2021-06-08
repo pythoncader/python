@@ -13,13 +13,13 @@ def clear():
 
 def runmainagain():
   import subprocess
-  print('\n\nPress enter to calculate again')
+  print('\n\nPress enter to calculate again or CTRL + C to quit')
   input("")
   subprocess.call(['python3', 'main.py'])
   
 def invalidinput():
   import subprocess
   clear()
-  print('Input not valid.\n\nPress enter to calculate again')
+  print('Input not valid.\n\nPress enter to calculate again or CTRL + C to quit')
   input("")
   subprocess.call(['python3', 'main.py'])
