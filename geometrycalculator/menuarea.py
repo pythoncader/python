@@ -1,6 +1,7 @@
 try:
   print("running area...")
   import subprocess
+  import sys
   import myfunctions
 
   myfunctions.clear()
@@ -20,5 +21,7 @@ try:
       subprocess.call(['python3', 'TrapezoidAreacalc.py'])
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

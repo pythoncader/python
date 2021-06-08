@@ -1,6 +1,7 @@
 try:
 	import math
 	import subprocess
+	import sys
 	import myfunctions
 
 	myfunctions.clear()
@@ -9,7 +10,7 @@ try:
 		calculate = int(input())
 	except Exception:
 		myfunctions.invalidinput()
-	
+
 	if calculate == 1:
 		myfunctions.clear()
 		print('Find the missing side length of a triangle: c = hypotenuse, b = leg, a = other leg. \nSimply put the missing side length in as 0 (zero)')
@@ -33,8 +34,10 @@ try:
 		else:
 			print('\nNope, this triangle is not a right triangle: \n\nc squared is equal to: '+str(csqrd)+ ', and b squared plus a squared is equal to: '+str(aplsbsqrd))
 	else:
-			print('Input not valid')
+		print('Input not valid')
 except Exception:
-	print("Something went wrong:")
+	print("Something went wrong!")
+except KeyboardInterrupt:
+	sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

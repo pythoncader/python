@@ -1,6 +1,7 @@
 try:
   import subprocess
   import myfunctions
+  import sys
 
   myfunctions.clear()
   pi = 3.1415926535897932384626433832795
@@ -30,5 +31,7 @@ try:
     print("Entry is not valid")
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter	
 myfunctions.runmainagain()

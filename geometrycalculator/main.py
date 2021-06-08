@@ -1,6 +1,7 @@
 try:
   import myfunctions
   import subprocess
+  import sys
   myfunctions.clear()
     
   print("What would you like to calculate? \n '1' = volume \n '2' = area \n '3' = perimeter \n '4' = finding values \n ...")
@@ -21,5 +22,7 @@ try:
       myfunctions.invalidinput()
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

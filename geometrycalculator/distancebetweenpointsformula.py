@@ -3,6 +3,7 @@ try:
   import myfunctions
   import time
   import subprocess
+  import sys
 
   myfunctions.clear()
   print('Find the distance between two points on the coordinate plane')
@@ -23,5 +24,7 @@ try:
   print('\nHere is the distance between the points:\n'+str(distance))
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

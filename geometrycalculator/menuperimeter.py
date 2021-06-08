@@ -1,6 +1,7 @@
 try:
   print('running perimeter...')
   import subprocess
+  import sys
   import myfunctions
 
   myfunctions.clear()
@@ -16,5 +17,7 @@ try:
       subprocess.call(['python3', 'CircumferenceAreaCirclecalc.py'])
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

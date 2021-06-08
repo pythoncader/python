@@ -2,6 +2,7 @@ try:
   import time
   import myfunctions
   import subprocess
+  import sys
   import myfunctions
 
   myfunctions.clear()
@@ -287,6 +288,8 @@ try:
   else:
     print('\nEntry is not valid')
 except Exception:
-  print('Something went wrong!')
+  print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()

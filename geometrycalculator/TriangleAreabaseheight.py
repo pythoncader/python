@@ -1,5 +1,6 @@
 try:
   import subprocess
+  import sys
   import time
   import myfunctions
 
@@ -17,5 +18,7 @@ try:
   myfunctions.runmainagain()
 except Exception:
   print("Something went wrong!")
+except KeyboardInterrupt:
+  sys.exit("Quitting Geometry Calculator...")
 #start calculator again on keypress Enter
 myfunctions.runmainagain()
