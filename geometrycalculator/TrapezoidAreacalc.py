@@ -2,8 +2,6 @@ def calc():
   try:
     import myfunctions
     import sys
-    import time
-    import myfunctions
 
     myfunctions.clear()
     print('Find the Area of a Trapezoid \n\nPlease Type the First Base Length Below:')

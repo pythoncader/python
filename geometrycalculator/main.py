@@ -1,7 +1,6 @@
 try:
   import myfunctions
   import sys
-  import time
 except:
   sys.exit("Imports failed")
 

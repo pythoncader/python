@@ -1,9 +1,7 @@
 def calc():
   try:
-    import time
     import myfunctions
     import sys
-    import myfunctions
 
     myfunctions.clear()
     print('Find the volume of a rectangular prism:')

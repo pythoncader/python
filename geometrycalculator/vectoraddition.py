@@ -1,7 +1,5 @@
 def calc():
     try:
-        from distancebetweenpointsformula import finddistance
-        import math
         import myfunctions
         import sys
 

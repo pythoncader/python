@@ -15,9 +15,7 @@ def finddistance(x1, y1, x2, y2):
 
 def calc():
   try:
-    import math
     import myfunctions
-    import time
     import sys
 
     myfunctions.clear()

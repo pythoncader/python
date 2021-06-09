@@ -1,9 +1,7 @@
 def calc():
   try:
-    import time
     import myfunctions
     import sys
-    import myfunctions
 
     myfunctions.clear()
     print('Find the perimeter of a polygon with 3 to 15 sides!')

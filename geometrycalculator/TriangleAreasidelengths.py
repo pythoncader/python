@@ -1,6 +1,5 @@
 def calc():
   try:
-    import time
     import sys
     import myfunctions
 
