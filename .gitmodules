@@ -1,0 +1,3 @@
+[submodule "geometry-calculator"]
+	path = geometry-calculator
+	url = https://github.com/pythoncader/geometry-calculator
